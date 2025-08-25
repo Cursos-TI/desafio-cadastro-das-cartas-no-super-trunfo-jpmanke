@@ -9,6 +9,7 @@ int main() {
     int pontosTuristicos1;
     float densidade1;
     float pibpercapita1;
+    float superpoder1;
 
     // carta 2
     char Estado2;
@@ -19,6 +20,11 @@ int main() {
     int pontosTuristicos2;
     float densidade2;
     float pibpercapita2;
+    float superpoder2;
+
+    printf ("*** JOGO SUPER TRUNFO *** \n");
+    printf ("\n");
+
 
     // cadastro da carta 1
     printf("cadastro da carta 1\n");
@@ -47,6 +53,12 @@ int main() {
     pibpercapita1 = (float)(pib1 / populacao1);
     printf("pib per capita é: %.2f\n", pibpercapita1);
 
+    superpoder1 = (float)(populacao1 + area1 + pib1 + pibpercapita1 + (1/densidade1));
+    printf ("Super Poder carta 1 é : %.2f\n", superpoder1);
+    printf ("\n");
+
+
+
     // cadastro da carta 2
     printf("cadastro da carta 2\n");
 
@@ -73,6 +85,10 @@ int main() {
 
     pibpercapita2 = (float)(pib2 / populacao2);
     printf("pib per capita é: %.2f\n", pibpercapita2);
+
+    superpoder2 = (float)(populacao2 + area2 + pib2 + pibpercapita2 + (1/densidade2));
+    printf ("Super Poder carta 2 é : %.2f\n", superpoder2);
+    printf ("\n");
 
     return 0;
 }
