@@ -91,7 +91,9 @@ int main(){
     // Comparacao das cartas
     printf("Comparacao de Cartas:\n");
     printf("População Carta 1 venceu: %d\n", populacao1 > populacao2);
-
+    printf("PIB Carta 1 venceu: %d\n", pib1 > pib2);
+    printf("Pontos Turísticos Carta 1 venceu: %d\n", pontosTuristicos1 > pontosTuristicos2);
+    printf("Super Poder Carta 1 venceu: %d\n", superpoder1 > superpoder2);
 
     return 0;
 }
